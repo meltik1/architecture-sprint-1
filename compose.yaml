@@ -46,7 +46,7 @@ services:
     build:
       context: frontend
       dockerfile: ../Dockerfile.frontend
-    command: yarn test:microfrontend
+    command: yarn test:auth-microfront
     restart: 'no'
     environment:
           CI: true

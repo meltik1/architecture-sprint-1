@@ -4,10 +4,10 @@ const { spawn } = require('child_process');
 const waitPort = require('wait-port');
 
 describe('Микрофронтенд директории', () => {
-  test('Проверка на наличие директорий, которые в названии имеют слово microfrontend', () => {
+  test('Проверка на наличие директорий, которые в названии имеют слово auth-microfront', () => {
     const dirs = fs.readdirSync('./', { withFileTypes: true });
     const hasDirs = dirs.some((item) =>
-      item.isDirectory() && item.name.includes('microfrontend')
+      item.isDirectory() && item.name.includes('auth-microfront')
     );
 
     expect(hasDirs).toBe(true);
