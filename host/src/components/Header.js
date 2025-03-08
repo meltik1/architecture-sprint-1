@@ -21,8 +21,8 @@ function Header({onSignOut, email}) {
                         </div>
                     }
                 />
-                <Route path="/signup" element={<Link className="header__auth-link" to="signin">Войти</Link>} />
-                <Route path="/signin" element={<Link className="header__auth-link" to="signup">Регистрация</Link>}/>
+                <Route path="/signup" element={<Link className="header__auth-link" to="/signin">Войти</Link>} />
+                <Route path="/signin" element={<Link className="header__auth-link" to="/signup">Регистрация</Link>}/>
             </Routes>
         </header>
     )
